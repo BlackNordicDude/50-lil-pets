@@ -18,9 +18,8 @@ btn.addEventListener('click', openSearch)
 console.log(i, btn, search);
 
 document.addEventListener('click', (e) => {
-    console.log(e.target);
     if (e.target === input || e.target === i || e.target === btn) {
-        console.log('OK');
+        /* fetching request */
     } else {
         search.classList.remove('active')
     }
