@@ -10,7 +10,6 @@ smallCups.forEach((cup, idx) => {
 })
 
 function highlightCups(idx) {
-
     if (smallCups[idx].classList.contains('full') && !smallCups[idx].nextElementSibling.classList.contains('full')) {
         idx--
     }
@@ -33,6 +32,7 @@ function updateBigCup() {
     if(fullCups === 0) {
         percentage.style.visibility = 'hidden'
         percentage.style.height = 0
+        percentage.innerText = ``
     } else {
         percentage.style.visibility = 'visible'
         percentage.style.height = `${fullCups / totalCups * 330}px`
